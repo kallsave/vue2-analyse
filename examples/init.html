@@ -6,10 +6,20 @@
   <title>Document</title>
 </head>
 <body>
-
+  <div id="app"></div>
 </body>
 <script src="../dist/vue.js"></script>
 <script>
-  console.log(Vue)
+  const vm = new Vue({
+    el: '#app',
+    data: {
+      name: 'df'
+    },
+    render() {
+      console.log('render')
+    }
+  })
+
+  console.log(vm)
 </script>
 </html>
